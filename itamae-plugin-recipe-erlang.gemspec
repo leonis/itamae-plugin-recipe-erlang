@@ -8,9 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = Itamae::Plugin::Recipe::Erlang::VERSION
   spec.authors       = ['Daisuke Hirakiuchi']
   spec.email         = ['devops@leonisand.co']
+  spec.licenses      = ['MIT']
 
   spec.summary       = 'Itamae plugin to install erlang.'
-  spec.description   = 'Itamae plugin to install erlang.'
+  spec.description   = 'Itamae plugin to install erlang by package.'
   spec.homepage      = 'https://github.com/leonis/itamae-plugin-recipe-erlang'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
