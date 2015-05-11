@@ -29,15 +29,13 @@ include_recipe 'erlang::package'
 
 ### Node
 
-Use this with `itamae -y node.yml`
+Use this with `itamae -y node.yml` if you want to specify erlang version.
 
 ```
 # node.yml
 erlang:
   version: R14B
 ```
-
-This version attribute is optional.
 
 ## Contributing
 
@@ -49,4 +47,5 @@ This version attribute is optional.
 
 ## License
 
-MIT
+Copyright 2015 Leonis & Co.
+MIT License
