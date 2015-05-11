@@ -48,4 +48,5 @@ erlang:
 ## License
 
 Copyright 2015 Leonis & Co.
+
 MIT License
