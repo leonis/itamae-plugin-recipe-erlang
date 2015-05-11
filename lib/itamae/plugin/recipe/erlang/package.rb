@@ -7,8 +7,6 @@ erlang_version = \
     nil
   end
 
-$stdout.puts 'Platform: ' + node[:platform]
-
 case node[:platform]
 when 'debian', 'ubuntu'
   package 'erlang-nox' do
