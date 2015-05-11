@@ -1,8 +1,6 @@
 # Itamae::Plugin::Recipe::Erlang
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/itamae/plugin/recipe/erlang`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+[Itamae](https://github.com/itamae-kitchen/itamae) plugin to install erlang.
 
 ## Installation
 
@@ -22,13 +20,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Recipe
 
-## Development
+```
+# your recipe
+include_recipe 'erlang::package'
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+### Node
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Use this with `itamae -y node.yml`
+
+```
+# node.yml
+erlang:
+  version: R14B
+```
+
+This version attribute is optional.
 
 ## Contributing
 
@@ -37,3 +46,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## License
+
+MIT
