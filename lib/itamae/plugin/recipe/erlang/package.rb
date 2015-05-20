@@ -20,5 +20,5 @@ when 'redhat', 'fedora'
     version erlang_version unless erlang_version.nil?
   end
 else
-  fail "Unknown platform: '#{node[:platform]}'"
+  fail "Sorry, your platform is not supported yet: '#{node[:platform]}'"
 end
